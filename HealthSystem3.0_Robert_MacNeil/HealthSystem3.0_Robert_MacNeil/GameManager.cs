@@ -17,13 +17,81 @@ namespace HealthSystem3._0_Robert_MacNeil
             // allows user to name player
             // player.NamePlayer();
 
-            // shows stats
+            // testing scripts
+            // showcase Player.TakeDamage() modifies shield
+            player.ResetStats();
             player.ShowHUD();
+            player.TakeDamage(50);
+            player.ShowHUD();
+
+            // showcase Player.TakeDamage() modifies shield and health
+            player.ResetStats();
+            player.ShowHUD();
+            player.TakeDamage(150);
+            player.ShowHUD();
+
+            // showcase Player.TakeDamage() modifies shield and health and lives
+            player.ResetStats();
+            player.ShowHUD();
+            player.TakeDamage(250);
+            player.ShowHUD();
+
+            // showcase Player.TakeDamage() error checks
+            player.ResetStats();
+            player.ShowHUD();
+            player.TakeDamage(-10);
+            player.ShowHUD();
+
+            // showcase Player.Heal() modifies health from full
+            player.ResetStats();
+            player.ShowHUD();
+            player.Heal(100);
+            player.ShowHUD();
+
+            // showcase Player.Heal() modifies health from half full
+            player.ResetStats();
+            player.ShowHUD();
+            player.TakeDamage(150);
+            player.Heal(100);
+            player.ShowHUD();
+
+
+
+            // showcase Player.TakeDamage() modifies shield
+            enemy.ResetStats();
+            enemy.ShowHUD();
+            enemy.TakeDamage(50);
             enemy.ShowHUD();
 
-            player.TakeDamage(50);
+            // showcase Player.TakeDamage() modifies shield and health
+            enemy.ResetStats();
+            enemy.ShowHUD();
+            enemy.TakeDamage(150);
+            enemy.ShowHUD();
 
-            player.ShowHUD();
+            // showcase Player.TakeDamage() modifies shield and health and lives
+            enemy.ResetStats();
+            enemy.ShowHUD();
+            enemy.TakeDamage(250);
+            enemy.ShowHUD();
+
+            // showcase Player.TakeDamage() error checks
+            enemy.ResetStats();
+            enemy.ShowHUD();
+            enemy.TakeDamage(-10);
+            enemy.ShowHUD();
+
+            // showcase Player.Heal() modifies health from full
+            enemy.ResetStats();
+            enemy.ShowHUD();
+            enemy.Heal(100);
+            enemy.ShowHUD();
+
+            // showcase Player.Heal() modifies health from half full
+            enemy.ResetStats();
+            enemy.ShowHUD();
+            enemy.TakeDamage(150);
+            enemy.Heal(100);
             enemy.ShowHUD();
 
             // waits for user input to close

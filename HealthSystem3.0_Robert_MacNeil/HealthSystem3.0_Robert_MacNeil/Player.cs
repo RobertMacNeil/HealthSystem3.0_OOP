@@ -8,11 +8,14 @@ namespace HealthSystem3._0_Robert_MacNeil
 {
     class Player : GameCharacter
     {
+        // child of GameCharacter
         public Player()
         {
             name = "Player";
             health = 100;
+            maxHealth = 100;
             shield = 100;
+            maxShield = 100;
             lives = 3;
         }
 
