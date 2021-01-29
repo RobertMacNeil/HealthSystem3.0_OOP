@@ -8,7 +8,7 @@ namespace HealthSystem3._0_Robert_MacNeil
 {
     class GameManager
     {
-        public void Start()
+        public void TestLogs()
         {
             // creates game objects
             Player player = new Player();
@@ -98,5 +98,18 @@ namespace HealthSystem3._0_Robert_MacNeil
             Console.WriteLine("Once done hit any key to close");
             Console.ReadKey();
         }
+
+        /*
+        public void Start()
+        {
+            Enemy enemy = new Enemy();
+            Player player = new Player();
+            while (player.GetLives() > 0)
+            {
+                player.ShowHUD();
+                enemy.ShowHUD();
+            }
+        }
+        */
     }
 }

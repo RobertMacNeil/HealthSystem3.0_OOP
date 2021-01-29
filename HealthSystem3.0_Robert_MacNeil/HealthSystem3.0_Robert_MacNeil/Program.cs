@@ -19,15 +19,40 @@ namespace HealthSystem3._0_Robert_MacNeil
             Console.WriteLine("Made by: Robert MacNeil");
             Console.WriteLine();
             Console.WriteLine("This is currently a test log");
+            //Console.WriteLine("Press 1: runs default test variables");
+            //Console.WriteLine("Press 2: runs example game");
             Console.WriteLine("Press any key to continue...");
+            Console.ReadKey(true);
 
             GameManager gameManager = new GameManager();
 
-            // waits for user input to continue then wipes screen and starts
-            Console.ReadKey();
-            Console.Clear();
+            gameManager.TestLogs();
 
-            gameManager.Start();
+            // MenuOption();
+
+            // waits for user input to continue then wipes screen and starts
+            /*
+            void MenuOption()
+            {
+                string option = Console.ReadKey().ToString();
+                switch (option)
+                {
+                    case "1":
+                        Console.Clear();
+                        gameManager.TestLogs();
+                        break;
+                    case "2":
+                        Console.Clear();
+                        gameManager.Start();
+                        break;
+                    default:
+                        Console.Clear();
+                        MenuOption();
+                        break;
+                }
+            }
+            */
+
         }
     }
 }

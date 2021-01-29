@@ -40,6 +40,7 @@ namespace HealthSystem3._0_Robert_MacNeil
                     // if kills the character
                     if (health <= 0)
                     {
+                        health = 0;
                         lives = lives - 1;
                         if (lives <= 0)
                         {
@@ -116,5 +117,46 @@ namespace HealthSystem3._0_Robert_MacNeil
             health = maxHealth;
             shield = maxShield;
         }
+
+        // -----------------Get/Set
+
+        /*public int GetLives()
+        {
+            return lives;
+        }
+        public void SetLives(int value)
+        {
+            if (value < 1)
+            {
+                value = 1;
+            }
+            lives = value;
+        }
+        public int GetMaxHealth()
+        {
+            return maxHealth;
+        }
+        public void SetMaxHealth(int value)
+        {
+            if (value < 1)
+            {
+                value = 1;
+            }
+            health = value;
+        }
+        public int GetMaxShield()
+        {
+            return maxShield;
+        }
+        public void SetMaxShield(int value)
+        {
+            if (value < 1)
+            {
+                value = 1;
+            }
+            shield = value;
+        }
+        */
+
     }
 }
